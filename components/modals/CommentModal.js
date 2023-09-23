@@ -50,7 +50,7 @@ export default function CommentModal() {
         onClose={() => dispatch(closeCommentModal())}
         className="flex justify-center items-center"
       >
-        <div className="bg-black w-full h-full sm:w-[600px] sm:h-[386px] rounded-lg border border-gray-500 sm:p-10 p-4 text-white relative">
+        <div className="bg-black w-full h-full sm:w-[600px] rounded-lg border border-gray-500 sm:p-10 p-4 text-white relative">
           <div
             className="absolute w-[2px] h-[77px] bg-gray-500 
           left-[40px] top-[122px] sm:left-[64px] sm:top-[145px]
