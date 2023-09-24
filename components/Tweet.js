@@ -68,9 +68,17 @@ export default function Tweet({ data, id }) {
     return unsubscribe;
   }, []);
 
+  const onClickHandler = !user.username
+    ? () => dispatch(openLoginModal())
+    : () => router.push("/" + id);
+
   return (
     <div
-      onClick={() => router.push("/" + id)}
+      // onClick={() => router.push("/" + id)}
+      onClick={(e) => {
+        e.stopPropagation();
+        onClickHandler();
+      }}
       className="border-b border-gray-700 cursor-pointer hover:bg-[#131313c9] duration-200"
     >
       <TweetHeader

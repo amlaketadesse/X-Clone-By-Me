@@ -41,8 +41,8 @@ export default function LoginModal() {
         onClose={() => dispatch(closeLoginModal())}
         className="flex justify-center items-center"
       >
-        <div className="flex justify-center w-[90%]  bg-black text-white md:w-[560px] border border-gray-700 rounded-lg">
-          <div className="w-[90%] flex flex-col p-6 px-12 ">
+        <div className="flex justify-center w-[90%]  bg-black text-white md:w-[560px] border border-gray-700 rounded-xl">
+          <div className="w-[90%] flex flex-col py-12 px-6 pt-4">
             <Image
               src={"/assets/twitter-logo.png"}
               width={34}
@@ -67,14 +67,14 @@ export default function LoginModal() {
               className="h-10 mt-6 rounded-md bg-transparent border border-gray-700 p-6"
             />
             <button
-              className="bg-white text-black w-full font-bold text-lg p-2 mt-8 rounded-full hover:bg-[#d3d0d0] ease-in-out duration-300"
+              className="bg-white text-black w-full font-bold text-md p-2 mt-8 rounded-full hover:bg-[#d3d0d0] ease-in-out duration-300"
               onClick={handleSignIn}
             >
               Log in
             </button>
             <h1 className="text-center my-4 font-bold text-lg">or</h1>
             <button
-              className="bg-transparent text-white w-full font-bold text-lg p-2 rounded-full border-[1px] border-white hover:bg-[#d3d0d0] ease-in-out duration-300"
+              className="bg-transparent text-white w-full font-bold text-md p-2 rounded-full border-[1px] border-white hover:bg-[#d3d0d0] ease-in-out duration-300"
               onClick={handleGuestSignIn}
             >
               Recruiters - Sign in as guest
