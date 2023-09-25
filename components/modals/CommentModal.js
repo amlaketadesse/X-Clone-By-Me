@@ -48,9 +48,9 @@ export default function CommentModal() {
       <Modal
         open={isOpen}
         onClose={() => dispatch(closeCommentModal())}
-        className="flex justify-center items-center md:mr-[120px]"
+        className="flex justify-center items-center 2xl:mr-[120px]"
       >
-        <div className="bg-black w-full md:h-[30%] sm:w-[600px] rounded-lg border border-gray-500 sm:p-10 p-4 text-white relative">
+        <div className="bg-black w-full h-full 2xl:h-[60%] sm:w-[600px] rounded-lg border border-gray-500 sm:p-10 p-4 text-white relative">
           <div
             className="absolute w-[2px] h-[77px] bg-gray-500 
           left-[40px] top-[122px] sm:left-[64px] sm:top-[145px]
